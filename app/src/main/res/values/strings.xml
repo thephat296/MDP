@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MDP</string>
+    <string name="university_name">Maharishi International University</string>
+    <string name="set_background">SetBackground</string>
+    <string name="assignment2">Assignment2</string>
+    <string name="assignment3">Assignment3</string>
 </resources>
