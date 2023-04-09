@@ -1,7 +1,31 @@
 <resources>
     <string name="app_name">MDP</string>
-    <string name="university_name">Maharishi International University</string>
-    <string name="set_background">SetBackground</string>
     <string name="assignment2">Assignment2</string>
     <string name="assignment3">Assignment3</string>
+    <string name="assignment4">Assignment4</string>
+    <string name="university_name">Maharishi International University</string>
+    <string name="assignment2_set_background">SetBackground</string>
+    <string name="sign_in_title">Sign in to your account</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_forgot_password">Forgot password?</string>
+    <string name="sign_in_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in_email_address_required">Email address (required)</string>
+    <string name="sign_in_password_required">Password (required)</string>
+    <string name="sign_in_create_a_new_account">Create a new account</string>
+    <string name="shopping_title">Shop by Categories</string>
+    <string name="shopping_category_books">Books</string>
+    <string name="shopping_category_clothing">Clothing</string>
+    <string name="shopping_category_organic_foods">Organic Foods</string>
+    <string name="shopping_category_medicines">Medicines</string>
+    <string name="shopping_welcome_user">Welcome %s</string>
+    <string name="shopping_category_chosen">You have chosen the %s category of shopping</string>
+    <string name="register_title">Create your account</string>
+    <string name="register_required_field">* required field</string>
+    <string name="register_first_name">First name*</string>
+    <string name="register_last_name">Last name*</string>
+    <string name="register_email">Email address*</string>
+    <string name="register_create_account">Create Account</string>
+    <string name="register_password">Password*</string>
+    <string name="calculator_first_number">First Number</string>
+    <string name="calculator_result">Result</string>
 </resources>

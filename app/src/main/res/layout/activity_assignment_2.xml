@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginVertical="25dp"
-        android:text="@string/set_background"
+        android:text="@string/assignment2_set_background"
         android:textAllCaps="false" />
 
     <ImageButton

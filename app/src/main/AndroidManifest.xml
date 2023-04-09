@@ -21,6 +21,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".assignment2.Assignment2Activity" />
+        <activity android:name=".assignment3.Assignment3Activity" />
+        <activity android:name=".assignment3.SignInActivity" />
+        <activity android:name=".assignment3.RegisterActivity" />
+        <activity android:name=".assignment3.ShoppingActivity" />
+        <activity android:name=".assignment3.CalculatorActivity" />
+        <activity android:name=".assignment4.SignInActivity" />
+        <activity android:name=".assignment4.ShoppingActivity" />
+        <activity android:name=".assignment4.RegisterActivity" />
     </application>
 
 </manifest>

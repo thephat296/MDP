@@ -5,30 +5,34 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:ignore="HardcodedText">
 
     <Button
-        android:id="@+id/btn_assignment2"
+        android:id="@+id/btn_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="@string/assignment2"
+        android:text="Sign In"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn_assignment3"
+        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="@string/assignment3"
+        android:text="Register"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn_assignment4"
+        android:id="@+id/btn_shopping"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="@string/assignment4"
+        android:text="Shopping"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
         android:textAllCaps="false" />
 
 </LinearLayout>
