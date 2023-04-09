@@ -41,4 +41,5 @@
     <string name="quiz_submit">Submit</string>
     <string name="quiz_reset">Reset</string>
     <string name="quiz_msg_submitted">Congratulations! You submitted on %s, Your achieved %s</string>
+    <string name="OK">OK</string>
 </resources>

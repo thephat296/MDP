@@ -2,7 +2,7 @@ package com.miu.mdp.assignment5.problem1
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.miu.mdp.R
 import com.miu.mdp.databinding.ActivityQuizBinding
@@ -29,16 +29,18 @@ class QuizActivity : AppCompatActivity() {
         }
         val currentDateAndTime = SimpleDateFormat(DATE_TIME_PATTERN, Locale.getDefault())
             .format(Calendar.getInstance().time)
-        val message = getString(R.string.quiz_msg_submitted, currentDateAndTime, "$result%")
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        AlertDialog.Builder(this)
+            .setMessage(getString(R.string.quiz_msg_submitted, currentDateAndTime, "$result%"))
+            .setPositiveButton(getString(R.string.OK)) { _, _ -> }
+            .show()
     }
 
     fun reset(view: View) {
         with(binding) {
             rgQuestion1Answers.clearCheck()
-            cbQuestion2Answer1.isChecked = false
-            cbQuestion2Answer2.isChecked = false
-            cbQuestion2Answer3.isChecked = false
+            listOf(cbQuestion2Answer1, cbQuestion2Answer2, cbQuestion2Answer3).forEach {
+                it.isChecked = false
+            }
         }
     }
 
