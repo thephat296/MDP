@@ -13,9 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="@string/assignment2"
+        android:onClick="startAssignment2"
         android:textAllCaps="false" />
 
     <Button
+        android:onClick="startAssignment3"
         android:id="@+id/btn_assignment3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,11 +26,21 @@
         android:textAllCaps="false" />
 
     <Button
+        android:onClick="startAssignment4"
         android:id="@+id/btn_assignment4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="@string/assignment4"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_assignment5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="startAssignment5"
+        android:text="@string/assignment5"
         android:textAllCaps="false" />
 
 </LinearLayout>

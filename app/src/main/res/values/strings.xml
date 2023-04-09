@@ -3,6 +3,7 @@
     <string name="assignment2">Assignment2</string>
     <string name="assignment3">Assignment3</string>
     <string name="assignment4">Assignment4</string>
+    <string name="assignment5">Assignment5</string>
     <string name="university_name">Maharishi International University</string>
     <string name="assignment2_set_background">SetBackground</string>
     <string name="sign_in_title">Sign in to your account</string>
@@ -28,4 +29,16 @@
     <string name="register_password">Password*</string>
     <string name="calculator_first_number">First Number</string>
     <string name="calculator_result">Result</string>
+    <string name="quiz_title">Kotlin Fundamentals knowledge</string>
+    <string name="quiz_question_1">Question 1: What is the default visibility modifier in Kotlin?</string>
+    <string name="quiz_question_1_answer_1">public</string>
+    <string name="quiz_question_1_answer_2">private</string>
+    <string name="quiz_question_1_answer_3">internal</string>
+    <string name="quiz_question_2">Question 2: Which of the following data types are the basic data types in Kotlin?</string>
+    <string name="quiz_question_2_answer_1">Int</string>
+    <string name="quiz_question_2_answer_2">Float</string>
+    <string name="quiz_question_2_answer_3">Array</string>
+    <string name="quiz_submit">Submit</string>
+    <string name="quiz_reset">Reset</string>
+    <string name="quiz_msg_submitted">Congratulations! You submitted on %s, Your achieved %s</string>
 </resources>
