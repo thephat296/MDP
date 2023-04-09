@@ -2,6 +2,7 @@ package com.miu.mdp.assignment4
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -45,13 +46,24 @@ class SignInActivity : AppCompatActivity() {
             launcher.launch(Intent(this, RegisterActivity::class.java))
         }
         binding.tvForgotPassword.setOnClickListener {
-            val user = users.firstOrNull() ?: return@setOnClickListener
-            val intent = Intent(Intent.ACTION_SEND)
-                .setType("text/plain")
-                .putExtra(Intent.EXTRA_EMAIL, arrayOf(user.userName))
-                .putExtra(Intent.EXTRA_SUBJECT, "Forgot password")
-                .putExtra(Intent.EXTRA_TEXT, "Your password is: ${user.password}")
-            startActivity(Intent.createChooser(intent, "Send Email"))
+            onForgotPasswordClick()
+        }
+    }
+
+    private fun onForgotPasswordClick() {
+        val email = binding.edtEmail.text.toString()
+        if (email.isEmpty()) {
+            return Toast.makeText(this, "Please input email!", Toast.LENGTH_SHORT).show()
+        }
+        val user = users.find { it.userName == email }
+            ?: return Toast.makeText(this, "Email not found!", Toast.LENGTH_SHORT).show()
+        val intent = Intent(Intent.ACTION_SENDTO).apply {
+            data = Uri.parse("mailto:${user.userName}?subject=ForgotPassword&body=${user.password}")
+        }
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "Mail app not found!", Toast.LENGTH_SHORT).show()
         }
     }
 }
