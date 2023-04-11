@@ -14,10 +14,11 @@
             android:id="@+id/iv_product"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/ic_organic_foods" />
+            tools:src="@drawable/ic_calm_vata_tea" />
 
         <TextView
             android:id="@+id/tv_title"

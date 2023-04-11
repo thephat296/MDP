@@ -22,12 +22,4 @@
         android:onClick="startProblem2And3"
         android:text="Problem 2&amp;3"
         android:textAllCaps="false" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:onClick="startProblem3"
-        android:text="Problem 3"
-        android:textAllCaps="false" />
 </LinearLayout>

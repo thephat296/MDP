@@ -25,7 +25,9 @@ class ShoppingActivity : AppCompatActivity() {
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
         binding.imgFoods.setOnClickListener {
-            startActivity(Intent(this, ProductListActivity::class.java))
+            startActivity(
+                ProductListActivity.newIntent(this, generateProducts())
+            )
         }
         binding.imgMedicines.setOnClickListener {
             val category = getString(R.string.shopping_category_medicines)
@@ -33,4 +35,35 @@ class ShoppingActivity : AppCompatActivity() {
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
     }
+
+    private fun generateProducts(): List<Product> = listOf(
+        Product(
+            title = "ORGANIC CALM VATA TEA",
+            price = 10.00,
+            itemId = "#41231",
+            imageRes = R.drawable.ic_calm_vata_tea,
+            desc = "Warming, grounding spices balance digestion and settle the mind"
+        ),
+        Product(
+            title = "ORGANIC SOOTHE PITTA TEA",
+            price = 8.00,
+            itemId = "#12311",
+            imageRes = R.drawable.ic_soothe_pitta_tea,
+            desc = "Refreshing spices gently cool and uplift"
+        ),
+        Product(
+            title = "ORGANIC ENERGIZE KAPHA® TEA",
+            price = 9.00,
+            itemId = "#521313",
+            imageRes = R.drawable.ic_energize_kapha_tea,
+            desc = "Stimulating spices boost your digestion and metabolism"
+        ),
+        Product(
+            title = "WORRY FREE TEA",
+            price = 8.50,
+            itemId = "#512321",
+            imageRes = R.drawable.ic_worry_free_tea,
+            desc = "Ashwagandha has many significant benefits, but is best known for its powerful adaptogenic properties, meaning that it helps mind and body adapt better to stress. It nourishes the nerves and improves nerve function to help you maintain calm during stress"
+        )
+    )
 }

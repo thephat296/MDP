@@ -24,9 +24,10 @@ class BookListActivity : AppCompatActivity() {
             "Other Authors",
             "Clearance"
         )
-        binding.lvBooks.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, books)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, books)
+        binding.lvBooks.adapter = adapter
         binding.lvBooks.setOnItemClickListener { _, _, position, _ ->
-            Toast.makeText(this, books[position], Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, adapter.getItem(position), Toast.LENGTH_SHORT).show()
         }
     }
 }

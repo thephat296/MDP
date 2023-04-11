@@ -43,4 +43,6 @@
     <string name="quiz_reset">Reset</string>
     <string name="quiz_msg_submitted">Congratulations! You submitted on %s, Your achieved %s</string>
     <string name="OK">OK</string>
+    <string name="product_price">$%.2f</string>
+    <string name="product_detail_key_benefits">Key Benefits:</string>
 </resources>
