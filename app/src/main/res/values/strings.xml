@@ -17,6 +17,7 @@
     <string name="shopping_category_books">Books</string>
     <string name="shopping_category_clothing">Clothing</string>
     <string name="shopping_category_organic_foods">Organic Foods</string>
+    <string name="shopping_category_organic_drinks">Organic Drinks</string>
     <string name="shopping_category_medicines">Medicines</string>
     <string name="shopping_welcome_user">Welcome %s</string>
     <string name="shopping_category_chosen">You have chosen the %s category of shopping</string>

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.miu.mdp.assignment2.Assignment2Activity
 import com.miu.mdp.assignment3.Assignment3Activity
 import com.miu.mdp.assignment4.SignInActivity
-import com.miu.mdp.assignment5.problem1.QuizActivity
+import com.miu.mdp.assignment5.Assignment5Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +28,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startAssignment5(view: View) {
-        startActivity(Intent(this, QuizActivity::class.java))
+        startActivity(Intent(this, Assignment5Activity::class.java))
     }
 }

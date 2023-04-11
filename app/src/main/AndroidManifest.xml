@@ -29,7 +29,12 @@
         <activity android:name=".assignment4.SignInActivity" />
         <activity android:name=".assignment4.ShoppingActivity" />
         <activity android:name=".assignment4.RegisterActivity" />
+        <activity android:name=".assignment5.Assignment5Activity" />
         <activity android:name=".assignment5.problem1.QuizActivity" />
+        <activity android:name=".assignment5.problem2_3.ShoppingActivity" />
+        <activity android:name=".assignment5.problem2_3.BookListActivity" />
+        <activity android:name=".assignment5.problem2_3.ProductListActivity" />
+        <activity android:name=".assignment5.problem2_3.ProductDetailActivity" />
     </application>
 
     <queries>
