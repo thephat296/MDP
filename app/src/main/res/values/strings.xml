@@ -45,4 +45,13 @@
     <string name="OK">OK</string>
     <string name="product_price">$%.2f</string>
     <string name="product_detail_key_benefits">Key Benefits:</string>
+    <string-array name="books">
+        <item>Maharishi</item>
+        <item>Dr Tony Nader</item>
+        <item>Scientific Research Consciousness, Knowledge and Enlightenment</item>
+        <item>Modern Science and Vedic Science</item>
+        <item>Book Series</item>
+        <item>Other Authors</item>
+        <item>Clearance</item>
+    </string-array>
 </resources>
